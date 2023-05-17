@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 0px 380px
+}
+
+.header_left {
+    padding: 0px 143px 0px 0px
+}
+
+.header_center {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header_center span {
+    font-size:  16px;
+    padding: 20px 20px 0px 20px;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.header_right {
+    padding: 20px 0px 0px 146px
+}
+
+.header_right :nth-child(2) {
+    padding: 0px 0px 0px 63px;
+}
+
+.header_right :nth-child(3) {
+    color: #3D4A39;
+    font-weight: 300;
+    font-size: 20px;  
+    font-family: Verdana;   
+}

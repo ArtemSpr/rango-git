@@ -30,6 +30,15 @@ body {
     font-weight: 500;
 }
 
+.header_center span:hover {
+    font-size:  16px;
+    padding: 20px 20px 0px 20px;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: 500;
+    color: #AE7B3C;
+}
+
 .header_right {
     padding: 20px 0px 0px 146px
 }
@@ -50,7 +59,7 @@ body {
 .slider {
     display: flex;
     flex-direction: row;
-    margin: 15px 0px 140px 40px
+    margin: 15px 0px 140px 0px
 }
 
 /* Слайдер */
@@ -331,13 +340,6 @@ body {
     margin: 0px 0px 0px 376px;
 }
 
-.advanteges img {
-    position: absolute;
-    margin: 444px 0px 0px 144px;
-    z-index: 10;
-    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
-}
-
 .advanteges-title {
     width: 373px;
     height: 58px;
@@ -362,10 +364,26 @@ body {
     font-size: 24px;
     line-height: 100%;
     color: #282B22;
-    opacity: 0.3;
     padding: 50px 573px 50px 40px;
     border-left: 1px solid #282b2280 ;
     border-top: 1px solid #282b2280 ;
+}
+
+.line-side_left  img {
+    position: absolute;
+    margin: -90px 0px 0px 144px;
+    z-index: 10;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    opacity: 0;
+}
+
+.line-side_left  img:hover {
+    position: absolute;
+    margin: -93px 0px 0px 144px;
+    z-index: 10;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    opacity: 1;
+    transition: 0.7s;
 }
 
 .line-side_left span:hover  {
@@ -380,6 +398,22 @@ body {
     line-height: 100%;
     color: #AE7B3C;
     margin: 0px 573px 0px 0px;
+    opacity: 1;
+}
+
+.line-side_left span  {
+    width: 28px;
+    height: 24px;
+    left: 200px;
+    top: 3385px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #AE7B3C;
+    margin: 0px 573px 0px 0px;
+    opacity: 0.3;
 }
 
 .line_right-title span {
@@ -555,5 +589,99 @@ body {
     font-size: 12px;
     line-height: 130%;
     color: #FFFFFF;
-    
+}
+
+.workStage {
+    margin: 140px 0px 140px 350px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #282b228a;
+    width: 1215px;
+}
+
+.workStage_item {
+    margin: 0px 40px 0px 40px;
+}
+
+.workStage_title {
+    width: 355px;
+    height: 58px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #282B22;
+    margin-bottom: 80px;
+    margin: 0px 0px 80px 430px;
+}
+
+.workStage_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.workStage_item-nbr {
+    width: 27px;
+    height: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #3D4A39;
+    border: 1px solid #282B22;
+    border-radius: 50%;
+    padding: 18px;
+    margin-bottom: 35px;
+}
+
+.workStage_item-title {
+    width: 204px;
+    height: 18px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #282B22;
+    margin-bottom: 15px;
+}
+
+.workStage_item-text {
+    width: 240px;
+    height: 92px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    color: #282B22;
+    opacity: 0.8;
+}
+
+.secSlider{
+    position: relative;
+    padding: 0px 0px 20px 200px;
+}
+
+.slick-track {
+    padding: 0px 0px 0px 40px;
+}
+
+.secSlider.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 11;
+    font-size: 0;
+}
+
+.secSlider.slick-arrow.slick-prev {
+    left: 0;
+    background-image: url(/icon/Стрілка.png) 0 0 no-repeat;
+}
+
+.secSlider.slick-arrow.slick-next {
+    background-image: url(/icon/Стрілка\ –\ копія.png) 0 0 no-repeat;
+    right: 0;
 }

@@ -1,26 +1,37 @@
 $(document).ready(function(){
     $('.slider').slick({
-        arrow:false;
+        arrows:false,
         dots:false,
         adaptiveHeight:true,
         autoplay:true,
-        autoplaySpeed:4000,
+        autoplaySpeed:2000,
         centerMode:true,
         fade:true,
         pauseOnHover:false,
     });
-});
-
-$(document).ready(function(){
     $('.secSlider').slick({
         arrows:true,
         dots:false,
         adaptiveHeight:true,
-        autoplay:true,
-        autoplaySpeed:4000,
+        autoplay:false,
+        autoplaySpeed:2000,
         centerMode:true,
-        fade:true,
+        fade:false,
         pauseOnHover:false,
+        slidesToShow:3,
+        infinite:true,
+    });
+    $('.ourPartner_slider').slick({
+        arrows:false,
+        dots:true,
+        adaptiveHeight:true,
+        autoplay:true,
+        autoplaySpeed:100,
+        centerMode:false,
+        fade:false,
+        pauseOnHover:true,
+        slidesToShow:3,
+        infinite:true,
     });
 });
 
